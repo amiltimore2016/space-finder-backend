@@ -18,3 +18,9 @@ Amazon Lambda node.js construct
 
 Or another option is using webpack
 
+Configuring Webpack
+
+npm i -D webpack webpack-cli ts-loader @types/webpack
+
+Create a webpack.config.ts
+

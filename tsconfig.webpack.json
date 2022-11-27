@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES2020",
+        "rootDir": "./services",
+        "esModuleInterop": true
+    },
+    "exclude": ["infrastructure","webpack.config.ts"]
+}

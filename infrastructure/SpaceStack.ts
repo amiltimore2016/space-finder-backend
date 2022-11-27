@@ -1,4 +1,4 @@
-import { Stack, StackProps } from 'aws-cdk-lib';
+import { Stack, StackProps, aws_lambda_nodejs } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { Code, Function as LambdaFunction, Runtime } from 'aws-cdk-lib/aws-lambda';
 import { join } from 'path';
@@ -21,6 +21,12 @@ export class SpaceStack extends Stack{
             runtime: Runtime.NODEJS_16_X,
             code: Code.fromAsset(join(__dirname, '..', 'services', 'hello')),
             handler: 'hello.main'
+        })
+
+        const nodeLambdaNodeJs = new aws_lambda_nodejs.NodejsFunction(this, 'helloLambdaNodjes', {
+            entry: (join(__dirname, '..', 'services', 'node-lambda', 'hello.ts')),
+            handler: 'handler',
+            runtime: Runtime.NODEJS_16_X
         })
 
         // Hello Api Lambda integration:

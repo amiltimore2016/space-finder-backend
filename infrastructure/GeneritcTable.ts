@@ -1,5 +1,5 @@
 import { AttributeType, Table } from 'aws-cdk-lib/aws-dynamodb';
-import { Stack } from 'aws-cdk-lib'
+import { RemovalPolicy, Stack } from 'aws-cdk-lib'
 
 export class GenericTable {
 
@@ -25,7 +25,8 @@ export class GenericTable {
                 name: this.primaryKey,
                 type: AttributeType.STRING
             },
-            tableName: this.name
+            tableName: this.name,
+            removalPolicy: RemovalPolicy.DESTROY
         });
     }
 

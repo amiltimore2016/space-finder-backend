@@ -10,3 +10,11 @@ Deployment parameters
 
 
 cdk deploy --parameters duration=11
+
+
+Amazon Lambda node.js construct
+
+@aws-cd/aws-lambda-nodejs
+
+Or another option is using webpack
+

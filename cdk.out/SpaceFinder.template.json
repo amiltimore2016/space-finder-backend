@@ -435,7 +435,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "c3681778ca5c7dc6eed9f76ee6adf1cad4165556b17115cc440b57ff0abe329e.zip"
+     "S3Key": "5fd1a099d294a9890a204bc7bee58fc860f506638ae0509ff6bfeaa04bc98693.zip"
     },
     "Role": {
      "Fn::GetAtt": [
@@ -456,7 +456,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "SpaceFinder/helloLambdaNodjes/Resource",
-    "aws:asset:path": "asset.c3681778ca5c7dc6eed9f76ee6adf1cad4165556b17115cc440b57ff0abe329e",
+    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/lesson2",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }

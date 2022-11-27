@@ -27,20 +27,20 @@
         }
       }
     },
-    "c3681778ca5c7dc6eed9f76ee6adf1cad4165556b17115cc440b57ff0abe329e": {
+    "5fd1a099d294a9890a204bc7bee58fc860f506638ae0509ff6bfeaa04bc98693": {
       "source": {
-        "path": "asset.c3681778ca5c7dc6eed9f76ee6adf1cad4165556b17115cc440b57ff0abe329e",
+        "path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/lesson2",
         "packaging": "zip"
       },
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "c3681778ca5c7dc6eed9f76ee6adf1cad4165556b17115cc440b57ff0abe329e.zip",
+          "objectKey": "5fd1a099d294a9890a204bc7bee58fc860f506638ae0509ff6bfeaa04bc98693.zip",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }
     },
-    "063d55469e45b32ced6a8fc2d998882212d74b36d1b837fa866831e19a7de455": {
+    "18a131aabc19967b1573b063da7fde58be451eca9f11744886aa314a34308c9e": {
       "source": {
         "path": "SpaceFinder.template.json",
         "packaging": "file"
@@ -48,7 +48,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "063d55469e45b32ced6a8fc2d998882212d74b36d1b837fa866831e19a7de455.json",
+          "objectKey": "18a131aabc19967b1573b063da7fde58be451eca9f11744886aa314a34308c9e.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }

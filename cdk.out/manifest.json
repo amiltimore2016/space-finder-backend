@@ -17,7 +17,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/18a131aabc19967b1573b063da7fde58be451eca9f11744886aa314a34308c9e.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/73b2ab2150be8e3262c888d065947b3032181eb2c0aaf712e85e05978e2e2d19.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -54,7 +54,7 @@
         "/SpaceFinder/spaceApi/Deployment/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "spaceApiDeployment14AE486E0f951925642ea4ff587e7f878dee65bf"
+            "data": "spaceApiDeployment14AE486E9ab09e86f7f6915e27314fa449d2f2aa"
           }
         ],
         "/SpaceFinder/spaceApi/DeploymentStage.prod/Resource": [
@@ -107,18 +107,6 @@
             "data": "SpacesTable8A997355"
           }
         ],
-        "/SpaceFinder/helloLambda/ServiceRole/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "helloLambdaServiceRoleBB046714"
-          }
-        ],
-        "/SpaceFinder/helloLambda/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "helloLambda79DCE371"
-          }
-        ],
         "/SpaceFinder/helloLambdaWebpack/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
@@ -135,6 +123,12 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "helloLambdaNodjesServiceRole9D857545"
+          }
+        ],
+        "/SpaceFinder/helloLambdaNodjes/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloLambdaNodjesServiceRoleDefaultPolicyCEA7B2D9"
           }
         ],
         "/SpaceFinder/helloLambdaNodjes/Resource": [

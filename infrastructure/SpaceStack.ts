@@ -4,6 +4,7 @@ import { Code, Function as LambdaFunction, Runtime } from 'aws-cdk-lib/aws-lambd
 import { join } from 'path';
 import { LambdaIntegration, RestApi } from 'aws-cdk-lib/aws-apigateway';
 import { GenericTable } from './GeneritcTable';
+import { PolicyStatement } from 'aws-cdk-lib/aws-iam';
 
 export class SpaceStack extends Stack{
 
@@ -11,17 +12,11 @@ export class SpaceStack extends Stack{
     private spacesTAble = new GenericTable(
         'SpacesTable',
         'spaceId',
-        this,
+        this
     )
 
     constructor(scope: Construct, id: string, props: StackProps) {
         super(scope, id, props);
-
-        const helloLambda = new LambdaFunction(this, 'helloLambda', {
-            runtime: Runtime.NODEJS_16_X,
-            code: Code.fromAsset(join(__dirname, '..', 'services', 'hello')),
-            handler: 'hello.main'
-        })
 
         const helloLambdaWebpack = new LambdaFunction(this, 'helloLambdaWebpack', {
             runtime: Runtime.NODEJS_16_X,
@@ -35,8 +30,13 @@ export class SpaceStack extends Stack{
             runtime: Runtime.NODEJS_16_X
         })
 
+        const s3ListPolicy = new PolicyStatement();
+        s3ListPolicy.addActions('s3:ListAllMyBuckets');
+        s3ListPolicy.addResources('*')
+        nodeLambdaNodeJs.addToRolePolicy(s3ListPolicy);
+
         // Hello Api Lambda integration:
-        const HelloLambdaIntegration = new LambdaIntegration(helloLambda);
+        const HelloLambdaIntegration = new LambdaIntegration(nodeLambdaNodeJs);
         const HelloLambdaResource = this.api.root.addResource('hello');
         HelloLambdaResource.addMethod('GET', HelloLambdaIntegration);
     }

@@ -1,19 +1,6 @@
 {
   "version": "21.0.0",
   "files": {
-    "3f3d5156ff8e0585109b9fe33325a74c6851e768dbd320e237078b20fe1b89bf": {
-      "source": {
-        "path": "asset.3f3d5156ff8e0585109b9fe33325a74c6851e768dbd320e237078b20fe1b89bf",
-        "packaging": "zip"
-      },
-      "destinations": {
-        "current_account-current_region": {
-          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "3f3d5156ff8e0585109b9fe33325a74c6851e768dbd320e237078b20fe1b89bf.zip",
-          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
-        }
-      }
-    },
     "e964c82bf830c51d75923fac025375de70488cf527a22f504fc29766b1bbdc95": {
       "source": {
         "path": "asset.e964c82bf830c51d75923fac025375de70488cf527a22f504fc29766b1bbdc95",
@@ -27,20 +14,20 @@
         }
       }
     },
-    "5fd1a099d294a9890a204bc7bee58fc860f506638ae0509ff6bfeaa04bc98693": {
+    "408ea93ddd34ce40ebf48d56c9100a35f51c907efd3cd6ccd99e203315dc1c71": {
       "source": {
-        "path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/lesson2",
+        "path": "asset.408ea93ddd34ce40ebf48d56c9100a35f51c907efd3cd6ccd99e203315dc1c71",
         "packaging": "zip"
       },
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "5fd1a099d294a9890a204bc7bee58fc860f506638ae0509ff6bfeaa04bc98693.zip",
+          "objectKey": "408ea93ddd34ce40ebf48d56c9100a35f51c907efd3cd6ccd99e203315dc1c71.zip",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }
     },
-    "18a131aabc19967b1573b063da7fde58be451eca9f11744886aa314a34308c9e": {
+    "73b2ab2150be8e3262c888d065947b3032181eb2c0aaf712e85e05978e2e2d19": {
       "source": {
         "path": "SpaceFinder.template.json",
         "packaging": "file"
@@ -48,7 +35,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "18a131aabc19967b1573b063da7fde58be451eca9f11744886aa314a34308c9e.json",
+          "objectKey": "73b2ab2150be8e3262c888d065947b3032181eb2c0aaf712e85e05978e2e2d19.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }

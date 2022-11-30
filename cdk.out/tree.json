@@ -23,7 +23,7 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.CfnRestApi",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "CloudWatchRole": {
@@ -35,7 +35,7 @@
                     "path": "SpaceFinder/spaceApi/CloudWatchRole/ImportCloudWatchRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.51.1"
+                      "version": "2.53.0"
                     }
                   },
                   "Resource": {
@@ -74,13 +74,13 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                      "version": "2.51.1"
+                      "version": "2.53.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_iam.Role",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "Account": {
@@ -99,7 +99,7 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.CfnAccount",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "Deployment": {
@@ -120,13 +120,13 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_apigateway.CfnDeployment",
-                      "version": "2.51.1"
+                      "version": "2.53.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.Deployment",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "DeploymentStage.prod": {
@@ -150,13 +150,13 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_apigateway.CfnStage",
-                      "version": "2.51.1"
+                      "version": "2.53.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.Stage",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "Endpoint": {
@@ -164,7 +164,7 @@
                 "path": "SpaceFinder/spaceApi/Endpoint",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "Default": {
@@ -195,7 +195,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_apigateway.CfnResource",
-                          "version": "2.51.1"
+                          "version": "2.53.0"
                         }
                       },
                       "GET": {
@@ -248,7 +248,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.51.1"
+                              "version": "2.53.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderspaceApi9B49793C.GET..hello": {
@@ -293,7 +293,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.51.1"
+                              "version": "2.53.0"
                             }
                           },
                           "Resource": {
@@ -341,31 +341,39 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_apigateway.CfnMethod",
-                              "version": "2.51.1"
+                              "version": "2.53.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_apigateway.Method",
-                          "version": "2.51.1"
+                          "version": "2.53.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_apigateway.Resource",
-                      "version": "2.51.1"
+                      "version": "2.53.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.ResourceBase",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_apigateway.RestApi",
-              "version": "2.51.1"
+              "version": "2.53.0"
+            }
+          },
+          "TableName": {
+            "id": "TableName",
+            "path": "SpaceFinder/TableName",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnParameter",
+              "version": "2.53.0"
             }
           },
           "SpacesTable": {
@@ -399,7 +407,7 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "ScalingRole": {
@@ -407,13 +415,13 @@
                 "path": "SpaceFinder/SpacesTable/ScalingRole",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.Resource",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_dynamodb.Table",
-              "version": "2.51.1"
+              "version": "2.53.0"
             }
           },
           "helloLambda": {
@@ -429,7 +437,7 @@
                     "path": "SpaceFinder/helloLambda/ServiceRole/ImportServiceRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.51.1"
+                      "version": "2.53.0"
                     }
                   },
                   "Resource": {
@@ -468,13 +476,13 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                      "version": "2.51.1"
+                      "version": "2.53.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_iam.Role",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "Code": {
@@ -486,7 +494,7 @@
                     "path": "SpaceFinder/helloLambda/Code/Stage",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
-                      "version": "2.51.1"
+                      "version": "2.53.0"
                     }
                   },
                   "AssetBucket": {
@@ -494,13 +502,13 @@
                     "path": "SpaceFinder/helloLambda/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                      "version": "2.51.1"
+                      "version": "2.53.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "Resource": {
@@ -527,13 +535,13 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_lambda.Function",
-              "version": "2.51.1"
+              "version": "2.53.0"
             }
           },
           "CDKMetadata": {
@@ -545,7 +553,7 @@
                 "path": "SpaceFinder/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnResource",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               },
               "Condition": {
@@ -553,13 +561,13 @@
                 "path": "SpaceFinder/CDKMetadata/Condition",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnCondition",
-                  "version": "2.51.1"
+                  "version": "2.53.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "constructs.Construct",
-              "version": "10.1.171"
+              "version": "10.1.175"
             }
           },
           "BootstrapVersion": {
@@ -567,7 +575,7 @@
             "path": "SpaceFinder/BootstrapVersion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnParameter",
-              "version": "2.51.1"
+              "version": "2.53.0"
             }
           },
           "CheckBootstrapVersion": {
@@ -575,13 +583,13 @@
             "path": "SpaceFinder/CheckBootstrapVersion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnRule",
-              "version": "2.51.1"
+              "version": "2.53.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "aws-cdk-lib.Stack",
-          "version": "2.51.1"
+          "version": "2.53.0"
         }
       },
       "Tree": {
@@ -589,13 +597,13 @@
         "path": "Tree",
         "constructInfo": {
           "fqn": "constructs.Construct",
-          "version": "10.1.171"
+          "version": "10.1.175"
         }
       }
     },
     "constructInfo": {
       "fqn": "aws-cdk-lib.App",
-      "version": "2.51.1"
+      "version": "2.53.0"
     }
   }
 }

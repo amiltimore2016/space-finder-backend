@@ -1,17 +1,19 @@
 import { AttributeType, Table } from 'aws-cdk-lib/aws-dynamodb';
 import { Stack } from 'aws-cdk-lib'
 
-export class GenericTable {
+export interface TableProps {
+    tableName: string,
+    primaryKey: string,
+}
 
-    private name: string;
-    private primaryKey: string;
+export class GenericTable {
 
     private stack: Stack;
     private table: Table;
+    private props: TableProps;
 
-    public constructor(name: string, primaryKey: string, stack: Stack) {
-        this.name = name;
-        this.primaryKey = primaryKey;
+    public constructor(stack: Stack, props: TableProps) {
+        this.props = props;
         this.stack = stack;
         this.initialize();
     }
@@ -19,13 +21,14 @@ export class GenericTable {
     private initialize(){
         this.createTable();
     }
+
     private createTable(){
-        this.table = new Table(this.stack, this.name, {
+        this.table = new Table(this.stack, this.props.tableName, {
             partitionKey: {
-                name: this.primaryKey,
+                name: this.props.primaryKey,
                 type: AttributeType.STRING
             },
-            tableName: this.name
+            tableName: this.props.tableName
         });
     }
 

@@ -1,10 +1,13 @@
 import { Stack } from 'aws-cdk-lib';
+export interface TableProps {
+    tableName: string;
+    primaryKey: string;
+}
 export declare class GenericTable {
-    private name;
-    private primaryKey;
     private stack;
     private table;
-    constructor(name: string, primaryKey: string, stack: Stack);
+    private props;
+    constructor(stack: Stack, props: TableProps);
     private initialize;
     private createTable;
 }

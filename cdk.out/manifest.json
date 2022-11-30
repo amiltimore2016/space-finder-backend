@@ -17,7 +17,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/b4ae56dfd1a2df41230311b095ab18160e36f9fcae33b23f1eccd5acf6db6c7d.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e501398c4c2388275b713f2fe9c5c69916ceaa40bbc6a5c8df9581be9a00ba83.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -91,6 +91,12 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "spaceApihelloGETF98803F9"
+          }
+        ],
+        "/SpaceFinder/TableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableName"
           }
         ],
         "/SpaceFinder/SpacesTable": [

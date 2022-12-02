@@ -1,6 +1,19 @@
 {
   "version": "21.0.0",
   "files": {
+    "6454cada1bff793db4e0d604745f64cb4172906aebc3c6530c231d2bd5a10b09": {
+      "source": {
+        "path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "6454cada1bff793db4e0d604745f64cb4172906aebc3c6530c231d2bd5a10b09.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
     "e964c82bf830c51d75923fac025375de70488cf527a22f504fc29766b1bbdc95": {
       "source": {
         "path": "asset.e964c82bf830c51d75923fac025375de70488cf527a22f504fc29766b1bbdc95",
@@ -14,20 +27,20 @@
         }
       }
     },
-    "408ea93ddd34ce40ebf48d56c9100a35f51c907efd3cd6ccd99e203315dc1c71": {
+    "daa90af20a848acadb7333b0561a312cc8300852ba66c94cf2e34f6b75e33422": {
       "source": {
-        "path": "asset.408ea93ddd34ce40ebf48d56c9100a35f51c907efd3cd6ccd99e203315dc1c71",
+        "path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
         "packaging": "zip"
       },
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "408ea93ddd34ce40ebf48d56c9100a35f51c907efd3cd6ccd99e203315dc1c71.zip",
+          "objectKey": "daa90af20a848acadb7333b0561a312cc8300852ba66c94cf2e34f6b75e33422.zip",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }
     },
-    "73b2ab2150be8e3262c888d065947b3032181eb2c0aaf712e85e05978e2e2d19": {
+    "6ceedd99199c294aed34c7233ed948ee4526fc1cee700748b26326dfb074f326": {
       "source": {
         "path": "SpaceFinder.template.json",
         "packaging": "file"
@@ -35,7 +48,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "73b2ab2150be8e3262c888d065947b3032181eb2c0aaf712e85e05978e2e2d19.json",
+          "objectKey": "6ceedd99199c294aed34c7233ed948ee4526fc1cee700748b26326dfb074f326.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }

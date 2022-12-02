@@ -9,11 +9,16 @@ import { PolicyStatement } from 'aws-cdk-lib/aws-iam';
 export class SpaceStack extends Stack{
 
     private api = new RestApi(this, 'spaceApi');
-    private spacesTAble = new GenericTable(
-        'SpacesTable',
-        'spaceId',
-        this
-    )
+    // private spacesTAble = new GenericTable(
+    //     'SpacesTable',
+    //     'spaceId',
+    //     this
+    // )
+    private SpacesTable = new GenericTable(this, {
+        tableName: 'SpacesTable',
+        primaryKey: 'spaceId',
+        createLambdaPath: 'Create'
+    } )
 
     constructor(scope: Construct, id: string, props: StackProps) {
         super(scope, id, props);
@@ -39,5 +44,9 @@ export class SpaceStack extends Stack{
         const HelloLambdaIntegration = new LambdaIntegration(nodeLambdaNodeJs);
         const HelloLambdaResource = this.api.root.addResource('hello');
         HelloLambdaResource.addMethod('GET', HelloLambdaIntegration);
+
+        // Spaces API Integration
+        const spaceResource = this.api.root.addResource('spaces');
+        spaceResource.addMethod('POST', this.SpacesTable.createLambdaIntegration);
     }
 }

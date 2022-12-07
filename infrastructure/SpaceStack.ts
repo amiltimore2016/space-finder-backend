@@ -9,11 +9,6 @@ import { PolicyStatement } from 'aws-cdk-lib/aws-iam';
 export class SpaceStack extends Stack{
 
     private api = new RestApi(this, 'spaceApi');
-    // private spacesTAble = new GenericTable(
-    //     'SpacesTable',
-    //     'spaceId',
-    //     this
-    // )
     private SpacesTable = new GenericTable(this, {
         tableName: 'SpacesTable',
         primaryKey: 'spaceId',

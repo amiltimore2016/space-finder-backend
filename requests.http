@@ -1,5 +1,8 @@
-@endpoint = https://g1o8oqjyqi.execute-api.eu-west-2.amazonaws.com/prod/
+@endpoint =  https://ruuqh9dr21.execute-api.eu-west-2.amazonaws.com/prod
 GET {{endpoint}}/hello/
+###
+
+GET {{endpoint}}/spaces?spaceId=e08a5b5a-de47-4ff8-adda-5c86d5ba47bb
 ###
 
 POST {{endpoint}}/spaces/

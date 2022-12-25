@@ -14,6 +14,19 @@
         }
       }
     },
+    "610f13d4502ac734721580ed8ff453083cdf05f30a5a9cc590983e98d9e46b8e": {
+      "source": {
+        "path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "610f13d4502ac734721580ed8ff453083cdf05f30a5a9cc590983e98d9e46b8e.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
     "e964c82bf830c51d75923fac025375de70488cf527a22f504fc29766b1bbdc95": {
       "source": {
         "path": "asset.e964c82bf830c51d75923fac025375de70488cf527a22f504fc29766b1bbdc95",
@@ -40,7 +53,7 @@
         }
       }
     },
-    "6ceedd99199c294aed34c7233ed948ee4526fc1cee700748b26326dfb074f326": {
+    "497070ea099bebc18585343d80ad87b063cd80fc3160303c261cfc3bd235c404": {
       "source": {
         "path": "SpaceFinder.template.json",
         "packaging": "file"
@@ -48,7 +61,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "6ceedd99199c294aed34c7233ed948ee4526fc1cee700748b26326dfb074f326.json",
+          "objectKey": "497070ea099bebc18585343d80ad87b063cd80fc3160303c261cfc3bd235c404.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }

@@ -20,7 +20,7 @@ export class SpaceStack extends Stack{
         super(scope, id, props);
 
         const helloLambdaWebpack = new LambdaFunction(this, 'helloLambdaWebpack', {
-            runtime: Runtime.NODEJS_16_X,
+            runtime: Runtime.NODEJS_18_X,
             code: Code.fromAsset(join(__dirname, '..', 'build', 'nodeHelloLambda')),
             handler: 'nodeHelloLambda.handler'
         })
@@ -28,7 +28,7 @@ export class SpaceStack extends Stack{
         const nodeLambdaNodeJs = new aws_lambda_nodejs.NodejsFunction(this, 'helloLambdaNodjes', {
             entry: (join(__dirname, '..', 'services', 'node-lambda', 'hello.ts')),
             handler: 'handler',
-            runtime: Runtime.NODEJS_16_X
+            runtime: Runtime.NODEJS_18_X
         })
 
         const s3ListPolicy = new PolicyStatement();

@@ -27,20 +27,7 @@
         }
       }
     },
-    "e964c82bf830c51d75923fac025375de70488cf527a22f504fc29766b1bbdc95": {
-      "source": {
-        "path": "asset.e964c82bf830c51d75923fac025375de70488cf527a22f504fc29766b1bbdc95",
-        "packaging": "zip"
-      },
-      "destinations": {
-        "current_account-current_region": {
-          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "e964c82bf830c51d75923fac025375de70488cf527a22f504fc29766b1bbdc95.zip",
-          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
-        }
-      }
-    },
-    "daa90af20a848acadb7333b0561a312cc8300852ba66c94cf2e34f6b75e33422": {
+    "6584254a95c44e29c6786780b7703b6cc29367d86245c55c00f1c9f7f0e346a2": {
       "source": {
         "path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
         "packaging": "zip"
@@ -48,12 +35,51 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "daa90af20a848acadb7333b0561a312cc8300852ba66c94cf2e34f6b75e33422.zip",
+          "objectKey": "6584254a95c44e29c6786780b7703b6cc29367d86245c55c00f1c9f7f0e346a2.zip",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }
     },
-    "497070ea099bebc18585343d80ad87b063cd80fc3160303c261cfc3bd235c404": {
+    "5992555a2ad00dd842b65c3b55711fd87c4cc950388ad2bdbe1de50db9e6923e": {
+      "source": {
+        "path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "5992555a2ad00dd842b65c3b55711fd87c4cc950388ad2bdbe1de50db9e6923e.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "c89873a71f353a261cf7f392b52effebc1477f415a234c86ba872806d1393720": {
+      "source": {
+        "path": "asset.c89873a71f353a261cf7f392b52effebc1477f415a234c86ba872806d1393720",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "c89873a71f353a261cf7f392b52effebc1477f415a234c86ba872806d1393720.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "0f542706ebd36e7815d317083baebda29d0b2a1d2f16294d3097bd4876679e76": {
+      "source": {
+        "path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "0f542706ebd36e7815d317083baebda29d0b2a1d2f16294d3097bd4876679e76.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "96473a24d48d5ed32d906261422c36530120ffb2768592e27a76e47d4f3a8f79": {
       "source": {
         "path": "SpaceFinder.template.json",
         "packaging": "file"
@@ -61,7 +87,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "497070ea099bebc18585343d80ad87b063cd80fc3160303c261cfc3bd235c404.json",
+          "objectKey": "96473a24d48d5ed32d906261422c36530120ffb2768592e27a76e47d4f3a8f79.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }

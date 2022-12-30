@@ -7,6 +7,7 @@ export interface TableProps {
     readLambdaPath?: string;
     updateLambdaPath?: string;
     deleteLambdaPath?: string;
+    secondaryIndexes?: string[];
 }
 export declare class GenericTable {
     private stack;
@@ -23,6 +24,7 @@ export declare class GenericTable {
     constructor(stack: Stack, props: TableProps);
     private initialize;
     private createTable;
+    private addSecondaryIndexes;
     private createLambdas;
     private grantTableRights;
     private createSingleLambda;

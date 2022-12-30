@@ -17,7 +17,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/497070ea099bebc18585343d80ad87b063cd80fc3160303c261cfc3bd235c404.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/96473a24d48d5ed32d906261422c36530120ffb2768592e27a76e47d4f3a8f79.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -54,7 +54,7 @@
         "/SpaceFinder/spaceApi/Deployment/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "spaceApiDeployment14AE486E8c8ec8df5a8331e888dcbcdfcb1b175a"
+            "data": "spaceApiDeployment14AE486E94235b46067c84ed1895e30fd479dad0"
           }
         ],
         "/SpaceFinder/spaceApi/DeploymentStage.prod/Resource": [
@@ -135,6 +135,42 @@
             "data": "spaceApispacesGET811A265D"
           }
         ],
+        "/SpaceFinder/spaceApi/Default/spaces/PUT/ApiPermission.SpaceFinderspaceApi9B49793C.PUT..spaces": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "spaceApispacesPUTApiPermissionSpaceFinderspaceApi9B49793CPUTspacesDFB15814"
+          }
+        ],
+        "/SpaceFinder/spaceApi/Default/spaces/PUT/ApiPermission.Test.SpaceFinderspaceApi9B49793C.PUT..spaces": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "spaceApispacesPUTApiPermissionTestSpaceFinderspaceApi9B49793CPUTspaces04A8939E"
+          }
+        ],
+        "/SpaceFinder/spaceApi/Default/spaces/PUT/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "spaceApispacesPUTE62068EE"
+          }
+        ],
+        "/SpaceFinder/spaceApi/Default/spaces/DELETE/ApiPermission.SpaceFinderspaceApi9B49793C.DELETE..spaces": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "spaceApispacesDELETEApiPermissionSpaceFinderspaceApi9B49793CDELETEspaces8FCAACAF"
+          }
+        ],
+        "/SpaceFinder/spaceApi/Default/spaces/DELETE/ApiPermission.Test.SpaceFinderspaceApi9B49793C.DELETE..spaces": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "spaceApispacesDELETEApiPermissionTestSpaceFinderspaceApi9B49793CDELETEspacesC4F3EBB1"
+          }
+        ],
+        "/SpaceFinder/spaceApi/Default/spaces/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "spaceApispacesDELETEC622EC41"
+          }
+        ],
         "/SpaceFinder/SpacesTable": [
           {
             "type": "aws:cdk:hasPhysicalName",
@@ -183,6 +219,42 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "SpacesTableReadC88C4D14"
+          }
+        ],
+        "/SpaceFinder/SpacesTable-Update/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpacesTableUpdateServiceRoleC28CF914"
+          }
+        ],
+        "/SpaceFinder/SpacesTable-Update/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpacesTableUpdateServiceRoleDefaultPolicy36B2545A"
+          }
+        ],
+        "/SpaceFinder/SpacesTable-Update/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpacesTableUpdate931099D2"
+          }
+        ],
+        "/SpaceFinder/SpacesTable-Delete/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpacesTableDeleteServiceRoleE51C080F"
+          }
+        ],
+        "/SpaceFinder/SpacesTable-Delete/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpacesTableDeleteServiceRoleDefaultPolicy036F0FB4"
+          }
+        ],
+        "/SpaceFinder/SpacesTable-Delete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpacesTableDeleteD71428D7"
           }
         ],
         "/SpaceFinder/helloLambdaWebpack/ServiceRole/Resource": [

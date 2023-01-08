@@ -915,7 +915,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "6454cada1bff793db4e0d604745f64cb4172906aebc3c6530c231d2bd5a10b09.zip"
+     "S3Key": "c7e536eb757abc1090aba0e9dc783986e63b006f06ac15433ef442c6046c4783.zip"
     },
     "Role": {
      "Fn::GetAtt": [
@@ -940,7 +940,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "SpaceFinder/SpacesTable-Create/Resource",
-    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
+    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/cdk/typescript/space-finder-backend",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -1040,7 +1040,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "610f13d4502ac734721580ed8ff453083cdf05f30a5a9cc590983e98d9e46b8e.zip"
+     "S3Key": "3134f042b6eff55fc6bfd14ba0ffc3c243410d467bbe539e48e7d681b5969101.zip"
     },
     "Role": {
      "Fn::GetAtt": [
@@ -1065,7 +1065,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "SpaceFinder/SpacesTable-Read/Resource",
-    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
+    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/cdk/typescript/space-finder-backend",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -1162,7 +1162,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "6584254a95c44e29c6786780b7703b6cc29367d86245c55c00f1c9f7f0e346a2.zip"
+     "S3Key": "1a71fae85c936deb64c84980f515af86f6c10c418ea69bd83a071c3127e76bca.zip"
     },
     "Role": {
      "Fn::GetAtt": [
@@ -1187,7 +1187,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "SpaceFinder/SpacesTable-Update/Resource",
-    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
+    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/cdk/typescript/space-finder-backend",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -1284,7 +1284,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "5992555a2ad00dd842b65c3b55711fd87c4cc950388ad2bdbe1de50db9e6923e.zip"
+     "S3Key": "7513d170328b96b84d5f71aaa388fef5a8f03f330c481c1ceb2c15311f1ca9e8.zip"
     },
     "Role": {
      "Fn::GetAtt": [
@@ -1309,7 +1309,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "SpaceFinder/SpacesTable-Delete/Resource",
-    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
+    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/cdk/typescript/space-finder-backend",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -1441,7 +1441,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "0f542706ebd36e7815d317083baebda29d0b2a1d2f16294d3097bd4876679e76.zip"
+     "S3Key": "22a368d0e6c66786de5927a03dea1e1f09df8fdf5afa44a367508a8b287cd304.zip"
     },
     "Role": {
      "Fn::GetAtt": [
@@ -1463,7 +1463,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "SpaceFinder/helloLambdaNodjes/Resource",
-    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/aws/cdk/typescript/space-finder-backend",
+    "aws:asset:path": "/Users/antoniomiltimore/dev/aws/tutorials/cdk/typescript/space-finder-backend",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }

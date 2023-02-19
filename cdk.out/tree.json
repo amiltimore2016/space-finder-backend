@@ -23,7 +23,7 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.CfnRestApi",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "CloudWatchRole": {
@@ -35,7 +35,7 @@
                     "path": "SpaceFinder/spaceApi/CloudWatchRole/ImportCloudWatchRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "Resource": {
@@ -74,13 +74,13 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_iam.Role",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Account": {
@@ -99,7 +99,7 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.CfnAccount",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Deployment": {
@@ -120,13 +120,13 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_apigateway.CfnDeployment",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.Deployment",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "DeploymentStage.prod": {
@@ -143,20 +143,20 @@
                           "Ref": "spaceApi1D6A1619"
                         },
                         "deploymentId": {
-                          "Ref": "spaceApiDeployment14AE486E94235b46067c84ed1895e30fd479dad0"
+                          "Ref": "spaceApiDeployment14AE486Ec5df6b956415232e416dff764742c765"
                         },
                         "stageName": "prod"
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_apigateway.CfnStage",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.Stage",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Endpoint": {
@@ -164,7 +164,7 @@
                 "path": "SpaceFinder/spaceApi/Endpoint",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Default": {
@@ -195,7 +195,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_apigateway.CfnResource",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       },
                       "GET": {
@@ -211,7 +211,7 @@
                                 "action": "lambda:InvokeFunction",
                                 "functionName": {
                                   "Fn::GetAtt": [
-                                    "helloLambdaNodjes0E4F1546",
+                                    "helloLambdaNodejsDC6A45FA",
                                     "Arn"
                                   ]
                                 },
@@ -248,7 +248,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderspaceApi9B49793C.GET..hello": {
@@ -260,7 +260,7 @@
                                 "action": "lambda:InvokeFunction",
                                 "functionName": {
                                   "Fn::GetAtt": [
-                                    "helloLambdaNodjes0E4F1546",
+                                    "helloLambdaNodejsDC6A45FA",
                                     "Arn"
                                   ]
                                 },
@@ -293,7 +293,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "Resource": {
@@ -309,7 +309,10 @@
                                 "restApiId": {
                                   "Ref": "spaceApi1D6A1619"
                                 },
-                                "authorizationType": "NONE",
+                                "authorizationType": "COGNITO_USER_POOLS",
+                                "authorizerId": {
+                                  "Ref": "SpaceUserAuthorizer401AE1AA"
+                                },
                                 "integration": {
                                   "type": "AWS_PROXY",
                                   "uri": {
@@ -327,7 +330,7 @@
                                         ":lambda:path/2015-03-31/functions/",
                                         {
                                           "Fn::GetAtt": [
-                                            "helloLambdaNodjes0E4F1546",
+                                            "helloLambdaNodejsDC6A45FA",
                                             "Arn"
                                           ]
                                         },
@@ -341,19 +344,19 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_apigateway.CfnMethod",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_apigateway.Method",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_apigateway.Resource",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "spaces": {
@@ -380,7 +383,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_apigateway.CfnResource",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       },
                       "POST": {
@@ -433,7 +436,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderspaceApi9B49793C.POST..spaces": {
@@ -478,7 +481,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "Resource": {
@@ -526,13 +529,13 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_apigateway.CfnMethod",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_apigateway.Method",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       },
                       "GET": {
@@ -585,7 +588,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderspaceApi9B49793C.GET..spaces": {
@@ -630,7 +633,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "Resource": {
@@ -678,13 +681,13 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_apigateway.CfnMethod",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_apigateway.Method",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       },
                       "PUT": {
@@ -737,7 +740,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderspaceApi9B49793C.PUT..spaces": {
@@ -782,7 +785,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "Resource": {
@@ -830,13 +833,13 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_apigateway.CfnMethod",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_apigateway.Method",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       },
                       "DELETE": {
@@ -889,7 +892,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderspaceApi9B49793C.DELETE..spaces": {
@@ -934,7 +937,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           },
                           "Resource": {
@@ -982,31 +985,31 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_apigateway.CfnMethod",
-                              "version": "2.53.0"
+                              "version": "2.65.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_apigateway.Method",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_apigateway.Resource",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_apigateway.ResourceBase",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_apigateway.RestApi",
-              "version": "2.53.0"
+              "version": "2.65.0"
             }
           },
           "SpacesTable": {
@@ -1062,7 +1065,7 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "ScalingRole": {
@@ -1070,13 +1073,13 @@
                 "path": "SpaceFinder/SpacesTable/ScalingRole",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.Resource",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_dynamodb.Table",
-              "version": "2.53.0"
+              "version": "2.65.0"
             }
           },
           "SpacesTable-Create": {
@@ -1092,7 +1095,7 @@
                     "path": "SpaceFinder/SpacesTable-Create/ServiceRole/ImportServiceRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "Resource": {
@@ -1131,7 +1134,7 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -1191,19 +1194,19 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.Policy",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_iam.Role",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Code": {
@@ -1215,7 +1218,7 @@
                     "path": "SpaceFinder/SpacesTable-Create/Code/Stage",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "AssetBucket": {
@@ -1223,13 +1226,13 @@
                     "path": "SpaceFinder/SpacesTable-Create/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Resource": {
@@ -1242,7 +1245,7 @@
                       "s3Bucket": {
                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                       },
-                      "s3Key": "c7e536eb757abc1090aba0e9dc783986e63b006f06ac15433ef442c6046c4783.zip"
+                      "s3Key": "8681ff3114288f7ef7cc2c160ff407d6da7897c341efba1c2692c16b9fc8127a.zip"
                     },
                     "role": {
                       "Fn::GetAtt": [
@@ -1264,13 +1267,13 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_lambda_nodejs.NodejsFunction",
-              "version": "2.53.0"
+              "version": "2.65.0"
             }
           },
           "SpacesTable-Read": {
@@ -1286,7 +1289,7 @@
                     "path": "SpaceFinder/SpacesTable-Read/ServiceRole/ImportServiceRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "Resource": {
@@ -1325,7 +1328,7 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -1388,19 +1391,19 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.Policy",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_iam.Role",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Code": {
@@ -1412,7 +1415,7 @@
                     "path": "SpaceFinder/SpacesTable-Read/Code/Stage",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "AssetBucket": {
@@ -1420,13 +1423,13 @@
                     "path": "SpaceFinder/SpacesTable-Read/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Resource": {
@@ -1439,7 +1442,7 @@
                       "s3Bucket": {
                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                       },
-                      "s3Key": "3134f042b6eff55fc6bfd14ba0ffc3c243410d467bbe539e48e7d681b5969101.zip"
+                      "s3Key": "fbb07c4f9e5143d9466ab38331281ec37e7eb530e9132b3f1e0f73bce11cea36.zip"
                     },
                     "role": {
                       "Fn::GetAtt": [
@@ -1461,13 +1464,13 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_lambda_nodejs.NodejsFunction",
-              "version": "2.53.0"
+              "version": "2.65.0"
             }
           },
           "SpacesTable-Update": {
@@ -1483,7 +1486,7 @@
                     "path": "SpaceFinder/SpacesTable-Update/ServiceRole/ImportServiceRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "Resource": {
@@ -1522,7 +1525,7 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -1582,19 +1585,19 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.Policy",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_iam.Role",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Code": {
@@ -1606,7 +1609,7 @@
                     "path": "SpaceFinder/SpacesTable-Update/Code/Stage",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "AssetBucket": {
@@ -1614,13 +1617,13 @@
                     "path": "SpaceFinder/SpacesTable-Update/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Resource": {
@@ -1633,7 +1636,7 @@
                       "s3Bucket": {
                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                       },
-                      "s3Key": "1a71fae85c936deb64c84980f515af86f6c10c418ea69bd83a071c3127e76bca.zip"
+                      "s3Key": "622f17697d010e43e857de6754380ee683733bd7ded3b00ebd1c7d519eaf24be.zip"
                     },
                     "role": {
                       "Fn::GetAtt": [
@@ -1655,13 +1658,13 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_lambda_nodejs.NodejsFunction",
-              "version": "2.53.0"
+              "version": "2.65.0"
             }
           },
           "SpacesTable-Delete": {
@@ -1677,7 +1680,7 @@
                     "path": "SpaceFinder/SpacesTable-Delete/ServiceRole/ImportServiceRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "Resource": {
@@ -1716,7 +1719,7 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -1776,19 +1779,19 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.Policy",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_iam.Role",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Code": {
@@ -1800,7 +1803,7 @@
                     "path": "SpaceFinder/SpacesTable-Delete/Code/Stage",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "AssetBucket": {
@@ -1808,13 +1811,13 @@
                     "path": "SpaceFinder/SpacesTable-Delete/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Resource": {
@@ -1827,7 +1830,7 @@
                       "s3Bucket": {
                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                       },
-                      "s3Key": "7513d170328b96b84d5f71aaa388fef5a8f03f330c481c1ceb2c15311f1ca9e8.zip"
+                      "s3Key": "ffaec0d609003af8f4fd0450a00dd3cc801c503dfa20513a6ddd5dc9b79963a3.zip"
                     },
                     "role": {
                       "Fn::GetAtt": [
@@ -1849,154 +1852,210 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_lambda_nodejs.NodejsFunction",
-              "version": "2.53.0"
+              "version": "2.65.0"
             }
           },
-          "helloLambdaWebpack": {
-            "id": "helloLambdaWebpack",
-            "path": "SpaceFinder/helloLambdaWebpack",
+          "SpaceuserPool": {
+            "id": "SpaceuserPool",
+            "path": "SpaceFinder/SpaceuserPool",
             "children": {
-              "ServiceRole": {
-                "id": "ServiceRole",
-                "path": "SpaceFinder/helloLambdaWebpack/ServiceRole",
-                "children": {
-                  "ImportServiceRole": {
-                    "id": "ImportServiceRole",
-                    "path": "SpaceFinder/helloLambdaWebpack/ServiceRole/ImportServiceRole",
-                    "constructInfo": {
-                      "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.53.0"
+              "Resource": {
+                "id": "Resource",
+                "path": "SpaceFinder/SpaceuserPool/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Cognito::UserPool",
+                  "aws:cdk:cloudformation:props": {
+                    "accountRecoverySetting": {
+                      "recoveryMechanisms": [
+                        {
+                          "name": "verified_phone_number",
+                          "priority": 1
+                        },
+                        {
+                          "name": "verified_email",
+                          "priority": 2
+                        }
+                      ]
+                    },
+                    "adminCreateUserConfig": {
+                      "allowAdminCreateUserOnly": false
+                    },
+                    "aliasAttributes": [
+                      "email"
+                    ],
+                    "autoVerifiedAttributes": [
+                      "email"
+                    ],
+                    "emailVerificationMessage": "The verification code to your new account is {####}",
+                    "emailVerificationSubject": "Verify your new account",
+                    "smsVerificationMessage": "The verification code to your new account is {####}",
+                    "userPoolName": "SpaceUserPool",
+                    "verificationMessageTemplate": {
+                      "defaultEmailOption": "CONFIRM_WITH_CODE",
+                      "emailMessage": "The verification code to your new account is {####}",
+                      "emailSubject": "Verify your new account",
+                      "smsMessage": "The verification code to your new account is {####}"
                     }
-                  },
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_cognito.CfnUserPool",
+                  "version": "2.65.0"
+                }
+              },
+              "SpaceUserPool-client": {
+                "id": "SpaceUserPool-client",
+                "path": "SpaceFinder/SpaceuserPool/SpaceUserPool-client",
+                "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "SpaceFinder/helloLambdaWebpack/ServiceRole/Resource",
+                    "path": "SpaceFinder/SpaceuserPool/SpaceUserPool-client/Resource",
                     "attributes": {
-                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:type": "AWS::Cognito::UserPoolClient",
                       "aws:cdk:cloudformation:props": {
-                        "assumeRolePolicyDocument": {
-                          "Statement": [
-                            {
-                              "Action": "sts:AssumeRole",
-                              "Effect": "Allow",
-                              "Principal": {
-                                "Service": "lambda.amazonaws.com"
-                              }
-                            }
-                          ],
-                          "Version": "2012-10-17"
+                        "userPoolId": {
+                          "Ref": "SpaceuserPoolCD4BF9BE"
                         },
-                        "managedPolicyArns": [
-                          {
-                            "Fn::Join": [
-                              "",
-                              [
-                                "arn:",
-                                {
-                                  "Ref": "AWS::Partition"
-                                },
-                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
-                              ]
-                            ]
-                          }
+                        "allowedOAuthFlows": [
+                          "implicit",
+                          "code"
+                        ],
+                        "allowedOAuthFlowsUserPoolClient": true,
+                        "allowedOAuthScopes": [
+                          "profile",
+                          "phone",
+                          "email",
+                          "openid",
+                          "aws.cognito.signin.user.admin"
+                        ],
+                        "callbackUrLs": [
+                          "https://example.com"
+                        ],
+                        "clientName": "SpaceUserPool-client",
+                        "explicitAuthFlows": [
+                          "ALLOW_ADMIN_USER_PASSWORD_AUTH",
+                          "ALLOW_CUSTOM_AUTH",
+                          "ALLOW_USER_SRP_AUTH",
+                          "ALLOW_REFRESH_TOKEN_AUTH"
+                        ],
+                        "generateSecret": false,
+                        "supportedIdentityProviders": [
+                          "COGNITO"
                         ]
                       }
                     },
                     "constructInfo": {
-                      "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                      "version": "2.53.0"
+                      "fqn": "aws-cdk-lib.aws_cognito.CfnUserPoolClient",
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
-                  "fqn": "aws-cdk-lib.aws_iam.Role",
-                  "version": "2.53.0"
-                }
-              },
-              "Code": {
-                "id": "Code",
-                "path": "SpaceFinder/helloLambdaWebpack/Code",
-                "children": {
-                  "Stage": {
-                    "id": "Stage",
-                    "path": "SpaceFinder/helloLambdaWebpack/Code/Stage",
-                    "constructInfo": {
-                      "fqn": "aws-cdk-lib.AssetStaging",
-                      "version": "2.53.0"
-                    }
-                  },
-                  "AssetBucket": {
-                    "id": "AssetBucket",
-                    "path": "SpaceFinder/helloLambdaWebpack/Code/AssetBucket",
-                    "constructInfo": {
-                      "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                      "version": "2.53.0"
-                    }
-                  }
-                },
-                "constructInfo": {
-                  "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                  "version": "2.53.0"
-                }
-              },
-              "Resource": {
-                "id": "Resource",
-                "path": "SpaceFinder/helloLambdaWebpack/Resource",
-                "attributes": {
-                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
-                  "aws:cdk:cloudformation:props": {
-                    "code": {
-                      "s3Bucket": {
-                        "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
-                      },
-                      "s3Key": "c89873a71f353a261cf7f392b52effebc1477f415a234c86ba872806d1393720.zip"
-                    },
-                    "role": {
-                      "Fn::GetAtt": [
-                        "helloLambdaWebpackServiceRole0688A60B",
-                        "Arn"
-                      ]
-                    },
-                    "handler": "nodeHelloLambda.handler",
-                    "runtime": "nodejs18.x"
-                  }
-                },
-                "constructInfo": {
-                  "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                  "version": "2.53.0"
+                  "fqn": "aws-cdk-lib.aws_cognito.UserPoolClient",
+                  "version": "2.65.0"
                 }
               }
             },
             "constructInfo": {
-              "fqn": "aws-cdk-lib.aws_lambda.Function",
-              "version": "2.53.0"
+              "fqn": "aws-cdk-lib.aws_cognito.UserPool",
+              "version": "2.65.0"
             }
           },
-          "helloLambdaNodjes": {
-            "id": "helloLambdaNodjes",
-            "path": "SpaceFinder/helloLambdaNodjes",
+          "UserPoolId": {
+            "id": "UserPoolId",
+            "path": "SpaceFinder/UserPoolId",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.65.0"
+            }
+          },
+          "UserPoolClientId": {
+            "id": "UserPoolClientId",
+            "path": "SpaceFinder/UserPoolClientId",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.65.0"
+            }
+          },
+          "SpaceUserAuthorizer": {
+            "id": "SpaceUserAuthorizer",
+            "path": "SpaceFinder/SpaceUserAuthorizer",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "SpaceFinder/SpaceUserAuthorizer/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ApiGateway::Authorizer",
+                  "aws:cdk:cloudformation:props": {
+                    "name": "SpaceUserAuthorizer",
+                    "restApiId": {
+                      "Ref": "spaceApi1D6A1619"
+                    },
+                    "type": "COGNITO_USER_POOLS",
+                    "identitySource": "method.request.header.Authorization",
+                    "providerArns": [
+                      {
+                        "Fn::GetAtt": [
+                          "SpaceuserPoolCD4BF9BE",
+                          "Arn"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_apigateway.CfnAuthorizer",
+                  "version": "2.65.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_apigateway.CognitoUserPoolsAuthorizer",
+              "version": "2.65.0"
+            }
+          },
+          "admins": {
+            "id": "admins",
+            "path": "SpaceFinder/admins",
+            "attributes": {
+              "aws:cdk:cloudformation:type": "AWS::Cognito::UserPoolGroup",
+              "aws:cdk:cloudformation:props": {
+                "userPoolId": {
+                  "Ref": "SpaceuserPoolCD4BF9BE"
+                },
+                "groupName": "admins"
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_cognito.CfnUserPoolGroup",
+              "version": "2.65.0"
+            }
+          },
+          "helloLambdaNodejs": {
+            "id": "helloLambdaNodejs",
+            "path": "SpaceFinder/helloLambdaNodejs",
             "children": {
               "ServiceRole": {
                 "id": "ServiceRole",
-                "path": "SpaceFinder/helloLambdaNodjes/ServiceRole",
+                "path": "SpaceFinder/helloLambdaNodejs/ServiceRole",
                 "children": {
                   "ImportServiceRole": {
                     "id": "ImportServiceRole",
-                    "path": "SpaceFinder/helloLambdaNodjes/ServiceRole/ImportServiceRole",
+                    "path": "SpaceFinder/helloLambdaNodejs/ServiceRole/ImportServiceRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "Resource": {
                     "id": "Resource",
-                    "path": "SpaceFinder/helloLambdaNodjes/ServiceRole/Resource",
+                    "path": "SpaceFinder/helloLambdaNodejs/ServiceRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -2030,16 +2089,16 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "DefaultPolicy": {
                     "id": "DefaultPolicy",
-                    "path": "SpaceFinder/helloLambdaNodjes/ServiceRole/DefaultPolicy",
+                    "path": "SpaceFinder/helloLambdaNodejs/ServiceRole/DefaultPolicy",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "SpaceFinder/helloLambdaNodjes/ServiceRole/DefaultPolicy/Resource",
+                        "path": "SpaceFinder/helloLambdaNodejs/ServiceRole/DefaultPolicy/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
                           "aws:cdk:cloudformation:props": {
@@ -2053,60 +2112,60 @@
                               ],
                               "Version": "2012-10-17"
                             },
-                            "policyName": "helloLambdaNodjesServiceRoleDefaultPolicyCEA7B2D9",
+                            "policyName": "helloLambdaNodejsServiceRoleDefaultPolicyF683C80C",
                             "roles": [
                               {
-                                "Ref": "helloLambdaNodjesServiceRole9D857545"
+                                "Ref": "helloLambdaNodejsServiceRole1F883DBC"
                               }
                             ]
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
-                          "version": "2.53.0"
+                          "version": "2.65.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.Policy",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_iam.Role",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Code": {
                 "id": "Code",
-                "path": "SpaceFinder/helloLambdaNodjes/Code",
+                "path": "SpaceFinder/helloLambdaNodejs/Code",
                 "children": {
                   "Stage": {
                     "id": "Stage",
-                    "path": "SpaceFinder/helloLambdaNodjes/Code/Stage",
+                    "path": "SpaceFinder/helloLambdaNodejs/Code/Stage",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   },
                   "AssetBucket": {
                     "id": "AssetBucket",
-                    "path": "SpaceFinder/helloLambdaNodjes/Code/AssetBucket",
+                    "path": "SpaceFinder/helloLambdaNodejs/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                      "version": "2.53.0"
+                      "version": "2.65.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Resource": {
                 "id": "Resource",
-                "path": "SpaceFinder/helloLambdaNodjes/Resource",
+                "path": "SpaceFinder/helloLambdaNodejs/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
@@ -2114,11 +2173,11 @@
                       "s3Bucket": {
                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                       },
-                      "s3Key": "22a368d0e6c66786de5927a03dea1e1f09df8fdf5afa44a367508a8b287cd304.zip"
+                      "s3Key": "a283272f8f8bea9e483ed70c882d3f1ec2b70ae8d5192d4b8c886ae55ecac9fb.zip"
                     },
                     "role": {
                       "Fn::GetAtt": [
-                        "helloLambdaNodjesServiceRole9D857545",
+                        "helloLambdaNodejsServiceRole1F883DBC",
                         "Arn"
                       ]
                     },
@@ -2133,13 +2192,13 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_lambda_nodejs.NodejsFunction",
-              "version": "2.53.0"
+              "version": "2.65.0"
             }
           },
           "CDKMetadata": {
@@ -2151,7 +2210,7 @@
                 "path": "SpaceFinder/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnResource",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               },
               "Condition": {
@@ -2159,13 +2218,13 @@
                 "path": "SpaceFinder/CDKMetadata/Condition",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnCondition",
-                  "version": "2.53.0"
+                  "version": "2.65.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "constructs.Construct",
-              "version": "10.1.176"
+              "version": "10.1.255"
             }
           },
           "BootstrapVersion": {
@@ -2173,7 +2232,7 @@
             "path": "SpaceFinder/BootstrapVersion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnParameter",
-              "version": "2.53.0"
+              "version": "2.65.0"
             }
           },
           "CheckBootstrapVersion": {
@@ -2181,13 +2240,13 @@
             "path": "SpaceFinder/CheckBootstrapVersion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnRule",
-              "version": "2.53.0"
+              "version": "2.65.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "aws-cdk-lib.Stack",
-          "version": "2.53.0"
+          "version": "2.65.0"
         }
       },
       "Tree": {
@@ -2195,13 +2254,13 @@
         "path": "Tree",
         "constructInfo": {
           "fqn": "constructs.Construct",
-          "version": "10.1.176"
+          "version": "10.1.255"
         }
       }
     },
     "constructInfo": {
       "fqn": "aws-cdk-lib.App",
-      "version": "2.53.0"
+      "version": "2.65.0"
     }
   }
 }

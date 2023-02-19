@@ -1,0 +1,23 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuthService = void 0;
+const aws_amplify_1 = require("aws-amplify");
+const aws_amplify_2 = require("aws-amplify");
+const config_1 = require("./config");
+aws_amplify_2.Amplify.configure({
+    Auth: {
+        mandatorySignIn: false,
+        region: config_1.config.REGION,
+        userPoolId: config_1.config.USER_POOL_Id,
+        userPoolWebClientId: config_1.config.APP_CLIENT_ID,
+        authenticationFlowType: 'USER_PASSWORD_AUTH'
+    }
+});
+class AuthService {
+    async login(userName, password) {
+        const user = await aws_amplify_1.Auth.signIn(userName, password);
+        return user;
+    }
+}
+exports.AuthService = AuthService;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXV0aFNlcnZpY2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJBdXRoU2VydmljZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSw2Q0FBbUM7QUFDbkMsNkNBQXNDO0FBQ3RDLHFDQUFrQztBQUdsQyxxQkFBTyxDQUFDLFNBQVMsQ0FBQztJQUNkLElBQUksRUFBRTtRQUNGLGVBQWUsRUFBRSxLQUFLO1FBQ3RCLE1BQU0sRUFBRSxlQUFNLENBQUMsTUFBTTtRQUNyQixVQUFVLEVBQUUsZUFBTSxDQUFDLFlBQVk7UUFDL0IsbUJBQW1CLEVBQUUsZUFBTSxDQUFDLGFBQWE7UUFDekMsc0JBQXNCLEVBQUUsb0JBQW9CO0tBQy9DO0NBQ0osQ0FBQyxDQUFBO0FBRUYsTUFBYSxXQUFXO0lBRWIsS0FBSyxDQUFDLEtBQUssQ0FBQyxRQUFnQixFQUFFLFFBQWdCO1FBQ2pELE1BQU0sSUFBSSxHQUFHLE1BQU0sa0JBQUksQ0FBQyxNQUFNLENBQUMsUUFBUSxFQUFFLFFBQVEsQ0FBZ0IsQ0FBQztRQUNsRSxPQUFPLElBQUksQ0FBQztJQUNoQixDQUFDO0NBQ0o7QUFORCxrQ0FNQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEF1dGggfSBmcm9tICdhd3MtYW1wbGlmeSc7XG5pbXBvcnQgeyBBbXBsaWZ5IH0gZnJvbSAnYXdzLWFtcGxpZnknO1xuaW1wb3J0IHsgY29uZmlnIH0gZnJvbSAnLi9jb25maWcnO1xuaW1wb3J0IHsgQ29nbml0b1VzZXIgfSBmcm9tICdAYXdzLWFtcGxpZnkvYXV0aCc7XG5cbkFtcGxpZnkuY29uZmlndXJlKHtcbiAgICBBdXRoOiB7XG4gICAgICAgIG1hbmRhdG9yeVNpZ25JbjogZmFsc2UsXG4gICAgICAgIHJlZ2lvbjogY29uZmlnLlJFR0lPTixcbiAgICAgICAgdXNlclBvb2xJZDogY29uZmlnLlVTRVJfUE9PTF9JZCxcbiAgICAgICAgdXNlclBvb2xXZWJDbGllbnRJZDogY29uZmlnLkFQUF9DTElFTlRfSUQsXG4gICAgICAgIGF1dGhlbnRpY2F0aW9uRmxvd1R5cGU6ICdVU0VSX1BBU1NXT1JEX0FVVEgnXG4gICAgfVxufSlcblxuZXhwb3J0IGNsYXNzIEF1dGhTZXJ2aWNlIHtcblxuICAgIHB1YmxpYyBhc3luYyBsb2dpbih1c2VyTmFtZTogc3RyaW5nLCBwYXNzd29yZDogc3RyaW5nKSB7XG4gICAgICAgIGNvbnN0IHVzZXIgPSBhd2FpdCBBdXRoLnNpZ25Jbih1c2VyTmFtZSwgcGFzc3dvcmQpIGFzIENvZ25pdG9Vc2VyO1xuICAgICAgICByZXR1cm4gdXNlcjtcbiAgICB9XG59Il19
